@@ -391,6 +391,39 @@ input[type='checkbox'] {
 	color: #14bf98;
 }
 
+
+.icon-bar {
+	margin-top: 10%;
+	margin-right: 0.6%;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 5;
+  }
+  
+.icon-bar a {
+	display: inline;
+	text-align: center;
+	padding: 14px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 13px;
+	border-radius: 50%;
+  }
+  
+.icon-bar a:hover {
+	background-color: #000;
+  }
+  
+.phone {
+	
+	background: #3B5998;
+	color: white;
+  }
+
 /* Form Success And Error Message Formatting */
 #lmsgSubmit.h3.text-center.tada.animated,
 #cmsgSubmit.h3.text-center.tada.animated,

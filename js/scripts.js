@@ -232,7 +232,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Please fill all fields!");
+            csubmitMSG(false, "Complete todos los campos!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -245,13 +245,14 @@
 		var name = $("#cname").val();
 		var email = $("#cemail").val();
         var message = $("#cmessage").val();
-        var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
             url: "php/contactform-process.php",
-            data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
+            data: "name=" + name + "&email=" + email + "&message=" + message , 
             success: function(text) {
-                if (text == "success") {
+                console.log("skssjjsjs",text)
+
+                if (text.includes("success")) {
                     cformSuccess();
                 } else {
                     cformError();
@@ -263,7 +264,7 @@
 
     function cformSuccess() {
         $("#contactForm")[0].reset();
-        csubmitMSG(true, "Message Submitted!");
+        csubmitMSG(true, "Mensaje Enviado");
         $("input").removeClass('notEmpty'); // resets the field label after submission
         $("textarea").removeClass('notEmpty'); // resets the field label after submission
     }
@@ -352,7 +353,11 @@
             $('a.back-to-top').fadeOut('500');
         }
     });
+   
 
+    
+    
+   
 
 	/* Removes Long Focus On Buttons */
 	$(".button, a, button").mouseup(function() {
