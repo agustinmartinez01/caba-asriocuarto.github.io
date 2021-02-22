@@ -393,11 +393,9 @@ input[type='checkbox'] {
 
 
 .icon-bar {
-	margin-top: 10%;
-	margin-right: 0.6%;
+	left: 50%;
+	bottom: 0;
 	position: fixed;
-	right: 0;
-	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -407,7 +405,7 @@ input[type='checkbox'] {
 .icon-bar a {
 	display: inline;
 	text-align: center;
-	padding: 14px;
+	padding: 20px;
 	transition: all 0.3s ease;
 	color: white;
 	font-size: 13px;
