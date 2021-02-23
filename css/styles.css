@@ -386,21 +386,20 @@ input[type='checkbox'] {
 	transition: all 0.2s;
 }
 
-.form-control-submit-button:hover {
+.form-control-submit-button:hover{
 	background-color: transparent;
 	color: #14bf98;
 }
 
-
 .icon-bar {
-	left: 50%;
+	left: 45%;
 	bottom: 0;
 	position: fixed;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: translateY(-200%);
 	z-index: 5;
-  }
+}
   
 .icon-bar a {
 	display: inline;
@@ -410,11 +409,11 @@ input[type='checkbox'] {
 	color: white;
 	font-size: 13px;
 	border-radius: 50%;
-  }
+}
   
 .icon-bar a:hover {
 	background-color: #000;
-  }
+}
   
 .phone {
 	
